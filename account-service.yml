@@ -4,31 +4,31 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/lovable-account-db
+    url: jdbc:postgresql://localhost:5432/lovable-account-db
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
 
 stripe:
   api:
-    secret: sk_test_51SltUYSqKZyfqYXUPuOa2khQFmQjLNV0poXK9DQ87ZDh2DNoqSfSpHW51coHInsFgcAdziLMbKwij5AL5SOY4IZH00UC0JYE9m
+    secret: sk_test_51TrZ59KibACKXiAvCXdg67zeSR4eWJ4O5rprbc3fexBYWrQrNEvyJt6c00cyN5a980EZjizgiIDKwwGW0dpHtxy500nn8cT0Nd
   webhook:
-    secret: whsec_1f2beb298b67fc1da93c54082fce1b10a7ecd7f2e09674f3b7e14f646393f1bc
+    secret: whsec_4d2a9508363c009568e2d731e897afe45371e860f8087135ae57e767ccf5fe12
 
 ---
 
-spring:
-  config:
-    activate:
-      on-profile: k8s
-  datasource:
-    url: jdbc:postgresql://pgvector.lovable-core.svc.cluster.local:5432/account_db
-    username: account_user
-    password: ${DB_PASSWORD}
+# spring:
+#   config:
+#     activate:
+#       on-profile: k8s
+#   datasource:
+#     url: jdbc:postgresql://pgvector.lovable-core.svc.cluster.local:5432/account_db
+#     username: account_user
+#     password: ${DB_PASSWORD}
 
 
-stripe:
-  api:
-    secret: ${STRIPE_API_KEY}
-  webhook:
-    secret: ${STRIPE_WEBHOOK_SECRET}
+# stripe:
+#   api:
+#     secret: ${STRIPE_API_KEY}
+#   webhook:
+#     secret: ${STRIPE_WEBHOOK_SECRET}
