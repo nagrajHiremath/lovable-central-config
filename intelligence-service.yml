@@ -16,7 +16,7 @@ spring:
       base-url: https://openrouter.ai/api
       chat:
         options:
-          model: google/gemini-3-flash-preview
+          model: google/gemma-4-26b-a4b-it:free
           temperature: 0.2
       embedding:
         options:
@@ -38,4 +38,4 @@ ai:
       api-key: ${AI_API_KEY}
     chat:
         options:
-          model: google/gemini-3-flash-preview
+          model: google/gemma-4-26b-a4b-it:free
