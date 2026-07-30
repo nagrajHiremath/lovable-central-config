@@ -1,1 +1,1 @@
-# lovable-config
+# lovable shared config
