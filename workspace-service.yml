@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/workspace-db
+    url: jdbc:postgresql://localhost:9010/workspace_db
     username: workspace_user
     password: workspace_password
     driver-class-name: org.postgresql.Driver
