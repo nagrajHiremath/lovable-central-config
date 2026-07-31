@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/intelligence_db
+    url: jdbc:postgresql://localhost:5432/intelligence_db
     username: intelligence_user
     password: intelligence_password
     driver-class-name: org.postgresql.Driver
