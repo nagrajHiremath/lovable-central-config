@@ -36,5 +36,5 @@ spring:
       chat:
         options:
           #          model: x-ai/grok-code-fast-1
-          model: qwen/qwen3.6-35b-a3b
+          model: google/gemma-4-26b-a4b-it:free
           temperature: 0.0
